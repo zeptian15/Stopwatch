@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="#EFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_waktu"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_mulai"
+        android:text="MULAI"
+        android:textColor="#ffff"
+        android:background="#006400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_waktu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <Button
+        android:id="@+id/btn_berhenti"
+        android:text="BERHENTI"
+        android:textColor="#ffff"
+        android:background="#a52a2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_mulai"
+        android:layout_alignBottom="@id/btn_mulai"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:text="RESET"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_alignTop="@id/btn_berhenti"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_simpan_putaran"
+        android:text="SIMPAN PUTARAN"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/btn_mulai"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/list_waktu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/btn_simpan_putaran"/>
+
+
+
+</RelativeLayout>
